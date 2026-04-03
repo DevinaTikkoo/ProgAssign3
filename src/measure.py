@@ -19,7 +19,7 @@ for index, size in enumerate(sizes, start=1):
     measured_results.append([f"test{index}.in", size, size, runtime_in_ms])
 
 #Save results to CSV file for generate.py
-with open("graph_results/runtimes.csv", "w", newline="") as f:
+with open("runtimes/runtimes.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["file", "length_a", "length_b", "runtime_ms"])
     writer.writerows(measured_results)
