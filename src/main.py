@@ -2,11 +2,11 @@ import sys
 
 def OPT():
     #read input
-    lines = list()
-    for line in sys.stdin:
-        line = line.strip()
-        if line:
-            lines.append(line)
+    if len(sys.argv) > 1:
+        with open(sys.argv[1]) as filename:
+            lines = [line.strip() for line in filename if line.strip()]
+    else:
+        lines = [line.strip() for line in sys.stdin if line.strip()]
     #parse input
     k = int(lines[0])
     character_values = {}
