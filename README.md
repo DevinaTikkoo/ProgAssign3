@@ -103,7 +103,7 @@ def HVLCS(A, B, v):
         else:
             j = j - 1
 
-    #retur length of the subsequence and the max value or HVLCS
-    return length(subsequence), OPT[n][m]
+    #return length of the subsequence and the max value or HVLCS
+    return subsequence.length(), OPT[n][m]
     
-    As the above pseudocode involves a table with (n-1)x(m-1) entries with each computed in constant time, the time complexity and space complexity are O(nm). Backtracking takes only O(n+ m) as it only moves directionally through the table. Hence, the original runtime overshadows and remaind O(nm)
+As the above pseudocode involves a table with (n-1)x(m-1) entries with each computed in constant time, the time complexity and space complexity are O(nm). Backtracking takes only O(n+ m) as it only moves directionally through the table. Hence, the original runtime overshadows and remaind O(nm)
