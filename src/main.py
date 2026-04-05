@@ -36,6 +36,7 @@ def OPT():
     subsequence = list()
     i = n
     j = m
+    #while not at the end of either string
     while i > 0 and j > 0:
         if a[i - 1] == b[j - 1] and arr[i][j] == arr[i - 1][j - 1] + character_values[a[i - 1]]:
             #character names was added to optimal subsequence
